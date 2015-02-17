@@ -4,7 +4,7 @@ GoPR ables you to open a pull-request from your current git branch.
 
 # Support
 
-For now, we only support bitbucket repo
+Supports **Github** and **BitBucket**.
 
 # Setup
 
