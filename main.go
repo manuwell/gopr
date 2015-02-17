@@ -13,8 +13,7 @@ func main() {
 		panic(err)
 	}
 
-	errOpen := exec.Command("open", url).Run()
-	if errOpen != nil {
-		log.Fatal(errOpen)
+	if err = exec.Command("open", url).Run(); err != nil {
+		log.Fatal(err)
 	}
 }
