@@ -8,7 +8,10 @@ import (
 
 func main() {
 
-	url := services.NewBitBucket(new(services.Git)).PRUrl()
+	url, err := new(services.Git).OpenPRUrl()
+	if err != nil {
+		panic(err)
+	}
 
 	errOpen := exec.Command("open", url).Run()
 	if errOpen != nil {

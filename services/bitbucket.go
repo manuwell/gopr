@@ -15,11 +15,11 @@ func NewBitBucket(git *Git) *BitBucket {
 	return repo
 }
 
-func (repo *BitBucket) PRUrl() string {
+func (repo *BitBucket) PRUrl() (string, error) {
 	url := repo.endpoint
 	url += repo.buildPath()
 
-	return url
+	return url, nil
 }
 
 func (repo *BitBucket) buildPath() string {
