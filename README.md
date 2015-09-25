@@ -23,3 +23,5 @@ export PATH=$PATH:$GOPATH/bin
 # On your project, checkout the branch you want to open PR and type:
 gopr
 ```
+
+# Lucas Santos Edition
